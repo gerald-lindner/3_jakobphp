@@ -1,0 +1,25 @@
+Your Account Details
+
+Your account is now active.
+Main Hosting Details
+Control panel username
+b16_17371122
+Control panel password	**********
+Control panel URL
+cpanel.byethost16.com
+MySQL username
+b16_17371122
+MySQL password
+**********
+MySQL hostname
+sql311.byethost16.com
+FTP username
+b16_17371122
+FTP password
+**********
+FTP host name	ftp.byethost16.com
+
+
+Your Website URL's
+Home page
+http://geritest.byethost16.com

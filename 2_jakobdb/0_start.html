@@ -1,0 +1,82 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Test Seite Jakob</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet1.css">
+</head>	
+<body>		
+
+<header id="header">
+	<div class="innertube">
+	<p>	<form id=suche1 method="POST" action="3_create.php"> 
+		<span style="float:right;">
+		<input type="submit" value="Neuen Eintrag erstellen" name="search" />
+		</span> 
+		</form> 
+		<form id=suche1 method="POST" action="2_result.php"> 
+			<span style="float:left;">
+		<input type="text" name="svall" />  
+		<input type="submit" value="Suche" name="search" />
+		</span> 
+		</form> 
+		
+
+	</p>
+	</div>
+</header>
+
+
+
+<nav id="left">
+<h1>Daten</h1>
+
+<form name=daten1 method="POST" action="2_result.php">  <!--input stuff-->
+		<p>
+		<label for="vorname">Vorname</label><br />
+		<input type="text" id="vorname" name="vorname" disabled /><br />
+		<label for="nachname">Nachname</label><br />
+		<input type="text" id="nachname" name="nachname" disabled /><br />
+		<label for="svnummer">SV Nummer</label><br />
+		<input type="text" id="svnummer" name="svnummer" disabled  /><br />
+		<label for="adresse">Adresse</label><br />
+		<input type="text" id="adresse" name="adresse" disabled /><br />
+		<label for="telefon">Telefon</label><br />
+		<input type="text" id="telefon" name="telefon" disabled  /><br />
+		<label for="mail">Mail</label> <br />
+		<input type="text" id="mail" name="mail"  disabled /><br />
+		<label for="sonstiges" disabled>Sonstiges</label>
+		<textarea rows="6" type="text" id="sonstiges" name="sonstiges"  disabled></textarea>
+				<!--here the hidden section starts-->
+		<input type="hidden" name="svall"  /><br />
+
+
+</nav>
+
+<nav id="right">
+<div class="innertube">
+<h1><label for="notizen">Notizen</label><br /></h1>
+<textarea cols="15" rows="25" type="text" name="notiz" disabled></textarea><br />
+</div>
+</nav>
+<footer id="footer">
+
+		
+	</footer>
+
+	<main>
+
+		<div class="innertube">
+		<h1>Startseite </h1>
+Bitte suchen Sie nach Einträgen oder erstellen Sie einen Neuen.
+		</p>
+  </div>
+
+</form>
+
+ 	</main>
+
+
+
+
+</body>
+</html>
