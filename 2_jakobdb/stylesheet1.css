@@ -37,10 +37,10 @@ background-color: #4CAF50;
 }
 		main {
 			position: fixed;
-			top: 45px; /* Set this to the height of the header */
-			bottom: 35px; /* Set this to the height of the footer */
-			left: 200px; 
-			right: 250px;
+			top: 50%; /* Set this to the height of the header */
+ margin-top:-50px; /* this is half the height of your div*/  
+  margin-left:-100px; /*this is half of width of your div*/
+			left: 50%; 
 			overflow: auto; 
 			background: #fff;
 		}

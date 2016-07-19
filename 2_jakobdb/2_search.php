@@ -9,83 +9,87 @@ document.location = "5_msearch.php";
 
 
 
-
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 
     <head>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Test Seite Jakob</title>
-		   	<link rel="stylesheet" type="text/css" href="stylesheet1.css">
+	<style>
+	.center {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+}
+input[type=text] {
+    width: 230px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center
+}
+
+input[type=text]:focus {
+    width: 75%;
+}	
+	
+		main{
+			position: fixed;
+			top: 50%; /* Set this to the height of the header */
+			left: 50%; 
+			overflow: auto; 
+			background: #fff;
+			 margin-top:-50px; /* this is half the height of your div*/  
+  margin-left:-100px; /*this is half of width of your div*/
+		}
+			
+	
+	
+	
+#mitte {
+    -webkit-align-self: center; /* Safari 7.0+ */
+    align-self: center;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+        border-radius: 4px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}	
+
+input[type="submit"]:hover {
+    background-color: #f44336;
+    color: white;
+}
+	
+	</style>
 	</head>
 	
-	<body>		
-	<?php
-	session_start(); 						
-	$_SESSION['nachname'] = $_POST['nachname'] ?>
-		<header id="header">
-			<div class="innertube2">
-				<p><form id="daten1" method="post" action="2_result_list.php"> <input type="text" id="svall" name="svall" />  <input type="submit" value="Suche" name="search" /></form> </p>
+<body>		
+	<main>
+		<div class=center>
+			Bitte geben sie SV Nummer oder Nachnamen ein
+			<form id="daten1" method="post" action="2_result_list.php"> <input type="text" name="svall" placeholder="Suche">  </p>
+			<input type="submit" value="Suche" name="search" />
+			</form> 
 		</div>
-		</header>
-				
-		<main>
-			<div class="innertube">
-				
-				<h1>Medizinische Daten</h1>
-				<p>Test</p>
-				
-			</div>
-		</main>
-
-		<nav id="left">
-			<div class="innertube">
-				<h1>Erstdaten</h1>
-				<ul> 
-					<li><p><form id="daten1" method="post" action="1_submit.php">  <!--input stuff-->
-							<p><label for="vorname">Vorname</label>
-	    					<input type="text" id="vorname" name="vorname" /><br />
-							<label for="nachname">Nachname</label>
-	    					<input type="text" id="nachname" name="nachname" /><br />
-	    					<label for="svnummer">SV Nummer</label>
-	    					<input type="text" id="svnummer" name="svnummer" /><br />
-	    					<label for="adresse">Adresse</label>
-	    					<input type="text" id="adresse" name="adresse" /><br />
-	    					<label for="telefon">Telefon</label>
-	    					<input type="text" id="telefon" name="telefon" /><br />
-	    					<label for="mail">Mail</label>
-	    					<input type="text" id="mail" name="mail" /><br />
-	    					<label for="sonstiges">Sonstiges</label></p>
-	    					<textarea rows="6" type="text" id="sonstiges" name="sonstiges" ></textarea>
-	    		</form>
-			
-					</li>
-
-				</ul>
-				
-				<h1>Bild</h1>
-				<ul><form method="POST" action="uploadFile" enctype="multipart/form-data"><p>
-					<strong>Hochladen</strong> 
-					<input type="file" name="file" /></p>
-					</form>
-				</ul>
-
-			</div>
-		</nav>	
-		<div id="right">
-			<div class="innertube">
-				<p></p>
-			</div>
-		</div>
-		
-		<footer id="footer">
-			<div class="innertube">
-				 <form method="post"><p>
-					 <input form="daten1" type="submit" value="Speichern" name="submit" /></p>
-				</form> 
-			</div>
-		</footer>	
-			
-	</body>
+	</main>
+</body>
 	
 </html>
